@@ -25,8 +25,8 @@ module.exports.createCampground = async (req, res, next) => {
     campground.author = req.user._id;
     await campground.save();
     console.log(campground);
-    req.flash('success', 'Successfully made a new campground!');
-    res.redirect(`/campgrounds/${campground._id}`)
+    req.flash('success', 'Successfully made a new tennis court!');
+    res.redirect(`/tenniscourts/${campground._id}`)
 }
 
 module.exports.showCampground = async (req, res,) => {
@@ -37,8 +37,8 @@ module.exports.showCampground = async (req, res,) => {
         }
     }).populate('author');
     if (!campground) {
-        req.flash('error', 'Cannot find that campground!');
-        return res.redirect('/campgrounds');
+        req.flash('error', 'Cannot find that tennis court!');
+        return res.redirect('/tenniscourts');
     }
     res.render('campgrounds/show', { campground });
 }
@@ -47,8 +47,8 @@ module.exports.renderEditForm = async (req, res) => {
     const { id } = req.params;
     const campground = await Campground.findById(id)
     if (!campground) {
-        req.flash('error', 'Cannot find that campground!');
-        return res.redirect('/campgrounds');
+        req.flash('error', 'Cannot find that tennis court!');
+        return res.redirect('/tenniscourts');
     }
     res.render('campgrounds/edit', { campground });
 }
@@ -66,13 +66,13 @@ module.exports.updateCampground = async (req, res) => {
         }
         await campground.updateOne({ $pull: { images: { filename: { $in: req.body.deleteImages } } } })
     }
-    req.flash('success', 'Successfully updated campground!');
-    res.redirect(`/campgrounds/${campground._id}`)
+    req.flash('success', 'Successfully updated tennis court!');
+    res.redirect(`/tenniscourts/${campground._id}`)
 }
 
 module.exports.deleteCampground = async (req, res) => {
     const { id } = req.params;
     await Campground.findByIdAndDelete(id);
-    req.flash('success', 'Successfully deleted campground')
-    res.redirect('/campgrounds');
+    req.flash('success', 'Successfully deleted tennis court')
+    res.redirect('/tenniscourts');
 }
