@@ -1,5 +1,5 @@
 # JustPlay - Find Your Favorite Tennis Court.
-A website to share all the good tennis courts nearby.
+
 
 <div id="top"></div>
 
@@ -14,10 +14,10 @@ A website to share all the good tennis courts nearby.
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">JustPlay</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A website to share all the good tennis courts nearby.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
