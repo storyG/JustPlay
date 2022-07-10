@@ -1,9 +1,5 @@
 # JustPlay - Find Your Favorite Tennis Court.
 
-    <br />
-    <a href="https://www.justwheretoplay.com/"><strong>Explore the Site »</strong></a>
-    <br />
-
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
@@ -14,7 +10,7 @@
   <p align="center">
     A website to share your favorite tennis courts nearby.
     <br />
-    <a href="https://github.com/storyG/JustPlay"><strong>Explore the docs »</strong></a>
+    <a href="https://www.justwheretoplay.com/"><strong>Explore the JustPlay website »</strong></a>
     <br />
     <br />
     <a href="https://github.com/storyG/JustPlay">View Demo</a>
@@ -50,7 +46,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+<a href="https://www.justwheretoplay.com/"><strong>Explore the JustPlay website »</strong></a>
 * To get full access of the website, sign up as a new user by clicking the register button!
 ![alt text](https://res.cloudinary.com/frank40609/image/upload/v1657395872/YelpCamp/Screen_Shot_2022-07-09_at_12.44.21_PM_wzc4gr.png)
 
